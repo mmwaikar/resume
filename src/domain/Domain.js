@@ -3,7 +3,7 @@ export class Score {
     this.gpa = gpa;
     this.percentage = percentage;
   }
-}
+};
 
 export class Award {
   constructor(title, date, awarder, summary) {
@@ -12,17 +12,18 @@ export class Award {
     this.awarder = awarder;
     this.summary = summary;
   }
-}
+};
 
 export class Location {
-  constructor(address, postalCode, city, country, region) {
+  constructor(address, postalCode, city, country, countryCode, region) {
     this.address = address;
     this.postalCode = postalCode;
     this.city = city;
     this.country = country;
+    this.countryCode = countryCode;
     this.region = region;
   }
-}
+};
 
 export class Profile {
   constructor(network, username, url) {
@@ -30,7 +31,7 @@ export class Profile {
     this.username = username;
     this.url = url;
   }
-}
+};
 
 export class Basics {
   constructor(name, label, picture, email, phone, website, summary, location, profiles) {
@@ -44,7 +45,7 @@ export class Basics {
     this.location = location;
     this.profiles = profiles;
   }
-}
+};
 
 export class Education {
   constructor(institution, area, studyType, startDate, endDate, score, summary, courses) {
@@ -57,28 +58,28 @@ export class Education {
     this.summary = summary;
     this.courses = courses;
   }
-}
+};
 
 export class Interest {
   constructor(name, keywords) {
     this.name = name;
     this.keywords = keywords;
   }
-}
+};
 
 export class Language {
   constructor(name, level) {
     this.name = name;
     this.level = level;
   }
-}
+};
 
 export class Reference {
   constructor(name, reference) {
     this.name = name;
     this.reference = reference;
   }
-}
+};
 
 export class Publication {
   constructor(name, publisher, releaseDate, website, summary) {
@@ -88,7 +89,7 @@ export class Publication {
     this.website = website;
     this.summary = summary;
   }
-}
+};
 
 export class Work {
   constructor(company, position, website, startDate, endDate, summary, highlights) {
@@ -100,7 +101,7 @@ export class Work {
     this.summary = summary;
     this.highlights = highlights;
   }
-}
+};
 
 export class Volunteer {
   constructor(organization, position, website, startDate, endDate, summary, highlights) {
@@ -112,7 +113,7 @@ export class Volunteer {
     this.summary = summary;
     this.highlights = highlights;
   }
-}
+};
 
 export class Skill {
   constructor(name, level, keywords) {
@@ -120,7 +121,7 @@ export class Skill {
     this.level = level;
     this.keywords = keywords;
   }
-}
+};
 
 export class Resume {
   constructor(basics, work, volunteer, education, awards, publications, skills, languages, interests, references) {
@@ -136,4 +137,4 @@ export class Resume {
     this.interests = interests;
     this.references = references;
   }
-}
+};
